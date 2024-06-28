@@ -1,0 +1,172 @@
+.header {
+    display: flex;
+    background-color: #f4f4f5;
+    color: #191919;
+}
+
+.service-title {
+    font-size: 1.5em;
+    margin: 1% 0% 1% 2%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdown-toggle {
+    display: none;
+}
+
+.dropdown-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    color: #191919;
+    font-size: 16px;
+}
+
+.dropdown-button img {
+    width: 40px; /* アイコンの幅を設定 */
+    height: auto; /* アイコンの高さを自動設定 */
+    margin-right: 10px;
+}
+
+.arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 8px solid #191919;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+#dropdown-toggle:checked + .dropdown-button .arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    right: 30;
+    padding: 10px;
+}
+
+#dropdown-toggle:checked ~ .dropdown-content {
+    display: block;
+}
+
+.dropdown-content h1 {
+    color: #1976d2;
+}
+
+.dropdown-content p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.App {
+    font-family: Arial, sans-serif;
+}
+
+.react-tabs__tab-list {
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.react-tabs__tab {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-bottom: none;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+}
+
+.react-tabs__tab--selected {
+    background: #fff;
+    border-color: #ccc;
+    color: #1976d2;
+    border-radius: 5px 5px 0 0;
+}
+
+.react-tabs__tab-panel--0 {
+    padding: 0px;
+    border-radius: 5px;
+}
+
+.parameter{
+    margin-top: -0.7%;
+    display: flex;
+    background-color: #e9e9e9;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart-container {
+    position: relative;
+    width: 200px; /* 円グラフの幅を設定 */
+    height: 200px; /* 円グラフの高さを設定 */
+    
+    margin: 1%
+}
+
+.chart-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-center-text {
+    margin-top: 12%;
+    text-align: center;
+    color: #1976d2; /* テキストカラーをMUIの青色に設定 */
+}
+
+.chart-center-text div {
+    font-size: 1.5em;
+    line-height: 1.2;
+}
+
+.graph_gender_area{
+    display: flex;
+    justify-content:space-evenly;
+    justify-content: space-around;
+}
+
+.graph-container {
+    position: relative;
+    margin-left: 5%;
+    width: 50%;
+    height: 10%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.doughnutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+  }
+  

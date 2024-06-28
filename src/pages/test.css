@@ -1,0 +1,40 @@
+.App {
+    font-family: Arial, sans-serif;
+  }
+  
+  .react-tabs__tab-list {
+    background-color: #ccc;
+    border-bottom: 2px solid #535353;
+    padding: 0;
+  }
+  
+  .react-tabs__tab {
+    height: 100%;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-bottom: none;
+    bottom: -2px;
+    position: relative;
+    list-style: none;
+    padding: 5px 25px;
+    cursor: pointer;
+  }
+  
+  .react-tabs__tab--selected {
+    padding: 15px;
+    background-color: #fff;
+    border-color: #fff #fff hsl(0, 0%, 100%);
+    color: black;
+  }
+  
+  .react-tabs__tab-panel {
+    width: 100%;
+    height: 100%;
+    margin-top: -1%;
+    padding: 10px;
+  }
+  
+  .react-tabs__tab-panel--selected {
+    display: block;
+  }
+  

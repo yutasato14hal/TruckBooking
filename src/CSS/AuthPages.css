@@ -1,0 +1,91 @@
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0 30px 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.titleBlueZone {
+  color: #0068c8;
+}
+.auth-form {
+  border: 2px black soild;
+  border-radius: 15px;
+  max-width: 450px;
+  /* formの大きさ */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15vh 3vw;
+  margin-bottom: 80px;
+}
+
+.auth-form h1 {
+  margin-bottom: 20px;
+}
+.auth-form label {
+font-size: 16px;
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  margin-bottom: 5px;
+  order: -1; /* ラベルを入力フィールドの前に表示 */
+  font-size: medium;
+  font-weight: bolder;
+}
+.auth-form select,
+.auth-form input {
+  width: 70%;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1.5px solid #000000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  
+}
+
+.button {
+  width: 60%;
+  font-weight: bolder;
+  margin: 0 auto;
+  margin-top: 2%;
+  padding: 10px;
+  background-color: #0068c8;
+  color: white;
+    border:1.5px solid #0068c8;
+  border-radius:10px;
+  cursor: pointer;
+  display: block;
+}
+.signup{
+    font-weight: bold;
+    background-color: #fff;
+    color: black;
+    border:1.5px solid black;
+    box-sizing: border-box;
+}
+
+.buttonArea {
+  margin-top: 60px;
+}
+.login:hover {
+  background-color: #0056b3;
+}
+.signup:hover{
+    background-color: black;
+    color: #fff;
+}
+.formArea {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.required {
+  color: red;
+}

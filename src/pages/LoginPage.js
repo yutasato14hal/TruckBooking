@@ -4,6 +4,8 @@ import { auth, db } from '../firebase';
 import { useNavigate } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
 import '../App.css';
+import '../CSS/AuthPages.css';
+
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -36,31 +38,43 @@ const LoginPage = () => {
   };
 
   return (
+    <>
+    <h1 className="title"><span className="titleBlueZone">Truck</span>Booking</h1>
     <form onSubmit={handleLogin} className="auth-form">
-      <h1>ログイン</h1>
-      <select value={role} onChange={(e) => setRole(e.target.value)} required>
-        <option value="">ログイン種類を選択してください</option>
-        <option value="shipper">荷主</option>
-        <option value="company">企業</option>
-        <option value="driver">ドライバー</option>
-      </select>
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="メールアドレス"
-        required
-      />
-      <input
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        placeholder="パスワード"
-        required
-      />
-      <button type="submit">ログイン</button>
-      <button onClick={() => navigate('/register')} className="auth-link">新規登録</button>
+      <div className="formArea">
+        <label>職種<span className="required">*</span></label>
+        <select value={role} onChange={(e) => setRole(e.target.value)} required>
+          <option value="">職種を選択してください。</option>
+          <option value="shipper">荷主</option>
+          <option value="company">企業</option>
+          <option value="driver">ドライバー</option>
+        </select>
+      </div>
+      <div className="formArea">
+        <label>メールアドレス<span className="required">*</span></label>
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="メールアドレス"
+          required
+        />
+      </div>
+      <div className="formArea">
+        <label>パスワード<span className="required">*</span></label>
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          placeholder="パスワード"
+          required
+        />
+      </div>
+      <div className="buttonArea">
+      <button type="submit" className="button login">ログイン</button>
+      <button onClick={() => navigate('/register')} className="auth-link signup button ">新規登録</button></div>
     </form>
+    </>
   );
 };
 

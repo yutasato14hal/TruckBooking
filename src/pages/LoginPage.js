@@ -5,6 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
 import '../App.css';
 import '../CSS/AuthPages.css';
+import HomePage from './HomePage';
+import { LineElement } from 'chart.js';
 
 
 const LoginPage = () => {
@@ -36,6 +38,7 @@ const LoginPage = () => {
       alert('ログインに失敗しました');
     }
   };
+
 
   return (
     <>
